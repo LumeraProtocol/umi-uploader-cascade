@@ -3,7 +3,7 @@
 A [Metaplex Umi](https://developers.metaplex.com/umi) uploader plugin that
 stores NFT assets **permanently** on [Lumera Cascade](https://lumera.io)
 (pay once, store forever) through a
-[cascade-api](https://github.com/kaleababayneh/cascade-api) gateway.
+[cascade-api](https://api.lumera.help) gateway.
 
 Works everywhere Umi's uploader interface is used: Token Metadata, Core,
 Core Candy Machine, and Bubblegum flows all consume the URIs it returns.

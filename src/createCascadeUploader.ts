@@ -10,7 +10,7 @@ import {
 
 export type CascadeUploaderOptions = {
   /**
-   * Base URL of a cascade-api gateway (https://github.com/kaleababayneh/cascade-api).
+   * Base URL of a cascade-api gateway.
    * Defaults to the hosted gateway at https://api.lumera.help.
    */
   endpoint?: string;
