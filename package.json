@@ -1,0 +1,57 @@
+{
+  "name": "@lumera-protocol/umi-uploader-cascade",
+  "version": "0.1.0",
+  "description": "Metaplex Umi uploader plugin that stores NFT assets permanently on Lumera Cascade via a cascade-api gateway",
+  "license": "MIT",
+  "author": "Lumera Protocol",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LumeraProtocol/umi-uploader-cascade.git"
+  },
+  "homepage": "https://github.com/LumeraProtocol/umi-uploader-cascade#readme",
+  "bugs": {
+    "url": "https://github.com/LumeraProtocol/umi-uploader-cascade/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "metaplex",
+    "umi",
+    "uploader",
+    "solana",
+    "nft",
+    "lumera",
+    "cascade",
+    "permanent-storage"
+  ],
+  "peerDependencies": {
+    "@metaplex-foundation/umi": ">= 0.9.0 < 2"
+  },
+  "devDependencies": {
+    "@metaplex-foundation/umi": "^1.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^3.0.0"
+  }
+}
